@@ -28,7 +28,7 @@ RUN pip install tensorflow_gpu==1.13.1
 RUN git config --global user.email "ilya.trofimov@skoltech.ru"
 RUN git config --global user.name "Ilya Trofimov"
 
-RUN mkdir latent_3d; cd latent_3d; git clone https://github.com/optas/latent_3d_points.git
+RUN mkdir latent_3d; cd latent_3d; git clone https://github.com/IlyaTrofimov/latent_3d_points.git
 RUN latent_3d/latent_3d_points/download_data.sh
 
 EXPOSE 8891
